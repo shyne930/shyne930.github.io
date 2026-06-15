@@ -1,10 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<title>YUHYUN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little YUHYUN</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Pretendard:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Pretendard',sans-serif;
+    background:#f8f3ed;
+    color:#5f5348;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+.section{
+    padding:60px 24px;
+}
+
+.hero{
+    position:relative;
+    text-align:center;
+    padding-bottom:40px;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+.overlay{
+    padding:50px 25px 20px;
+}
+
+.subtitle{
+    color:#b89d7d;
+    font-size:14px;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.title{
+    font-family:'Nanum Myeongjo',serif;
+    font-size:38px;
+    color:#7a6756;
+    margin-bottom:10px;
+}
+
+.name{
+    font-size:22px;
+    font-weight:600;
+    color:#8c745f;
+}
+
+.info-card{
+    margin:30px auto;
+    max-width:500px;
+    background:#fffdfb;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.05);
+    text-align:center;
+}
+
+.info-card h2{
+    font-family:'Nanum Myeongjo',serif;
+    margin-bottom:20px;
+    color:#7a6756;
+}
+
+.info-line{
+    margin:10px 0;
+    font-size:16px;
+}
+
+.gallery-wrap{
+    padding:0 16px 60px;
+}
+
+.gallery-title{
+    text-align:center;
+    font-family:'Nanum Myeongjo',serif;
+    font-size:28px;
+    margin-bottom:30px;
+    color:#7a6756;
+}
+
+.slider{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.slides{
+    display:flex;
+    width:1000%;
+    animation:slide 40s infinite;
+}
+
+.slides img{
+    width:10%;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%,8%{transform:translateX(0);}
+    10%,18%{transform:translateX(-10%);}
+    20%,28%{transform:translateX(-20%);}
+    30%,38%{transform:translateX(-30%);}
+    40%,48%{transform:translateX(-40%);}
+    50%,58%{transform:translateX(-50%);}
+    60%,68%{transform:translateX(-60%);}
+    70%,78%{transform:translateX(-70%);}
+    80%,88%{transform:translateX(-80%);}
+    90%,98%{transform:translateX(-90%);}
+    100%{transform:translateX(0);}
+}
+
+.map-btn{
+    display:inline-block;
+    margin-top:24px;
+    background:#7e6b5c;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:999px;
+    font-size:15px;
+    font-weight:500;
+}
+
+.footer{
+    text-align:center;
+    padding:50px 20px 80px;
+    color:#9f8d7f;
+    font-size:14px;
+}
+
+.decoration{
+    position:absolute;
+    opacity:.25;
+}
+
+.balloon{
+    top:40px;
+    left:20px;
+    width:80px;
+}
+
+.flower{
+    top:90px;
+    right:20px;
+    width:70px;
+}
+
+.cake{
+    bottom:20px;
+    right:20px;
+    width:90px;
+}
+
+.quote{
+    text-align:center;
+    padding:0 30px 50px;
+    color:#8f7d70;
+    font-size:15px;
+}
+
+audio{
+    display:none;
+}
+
+@media(max-width:480px){
+    .title{
+        font-size:32px;
+    }
+
+    .name{
+        font-size:20px;
+    }
+
+    .info-card{
+        padding:24px;
+    }
+}
+</style>
 </head>
+
 <body>
-<h1>Our Little YUHYUN</h1>
-<p>첫 돌 초대장 제작중 💕</p>
+
+<audio autoplay loop>
+    <source src="bgm.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+
+<svg class="decoration balloon" viewBox="0 0 120 160">
+<ellipse cx="60" cy="55" rx="35" ry="45" fill="#e8d6c5"/>
+<line x1="60" y1="100" x2="60" y2="155" stroke="#c3a994" stroke-width="3"/>
+</svg>
+
+<svg class="decoration flower" viewBox="0 0 100 100">
+<circle cx="50" cy="20" r="15" fill="#f3d7d7"/>
+<circle cx="25" cy="40" r="15" fill="#f3d7d7"/>
+<circle cx="75" cy="40" r="15" fill="#f3d7d7"/>
+<circle cx="35" cy="70" r="15" fill="#f3d7d7"/>
+<circle cx="65" cy="70" r="15" fill="#f3d7d7"/>
+<circle cx="50" cy="50" r="14" fill="#f0c98d"/>
+</svg>
+
+<img src="main.jpg" alt="YUHYUN">
+
+<div class="overlay">
+<div class="subtitle">OUR LITTLE</div>
+<div class="title">YUHYUN</div>
+<div class="name">이유현</div>
+</div>
+
+</section>
+
+<section class="quote">
+소중한 첫 번째 생일,<br>
+유현이의 작은 동화 속 하루에 초대합니다.
+</section>
+
+<section class="section">
+
+<div class="info-card">
+
+<h2>Birthday Party</h2>
+
+<div class="info-line">🎂 이유현 YUHYUN</div>
+<div class="info-line">📅 2026.06.20 (토)</div>
+<div class="info-line">🕠 오후 5시 30분</div>
+<div class="info-line">📍 위시스튜디오</div>
+<div class="info-line">부산 수영구 수미로50번길 57-5 1층</div>
+
+<a
+class="map-btn"
+href="https://naver.me/5z52SyKZ"
+target="_blank">
+네이버 지도 보기
+</a>
+
+</div>
+
+</section>
+
+<section class="gallery-wrap">
+
+<div class="gallery-title">Gallery</div>
+
+<div class="slider">
+<div class="slides">
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+<img src="gallery5.jpg">
+<img src="gallery6.jpg">
+<img src="gallery7.jpg">
+<img src="gallery8.jpg">
+<img src="gallery9.jpg">
+<img src="gallery10.jpg">
+</div>
+</div>
+
+</section>
+
+<section class="footer">
+
+<svg class="cake" viewBox="0 0 120 120">
+<rect x="25" y="50" width="70" height="40" rx="8" fill="#e8d6c5"/>
+<rect x="20" y="40" width="80" height="15" rx="8" fill="#f3d7d7"/>
+<rect x="56" y="15" width="8" height="25" fill="#c7a17a"/>
+<path d="M60 8 C55 15,55 20,60 24 C65 20,65 15,60 8" fill="#ffd88c"/>
+</svg>
+
+Thank you for celebrating with us ♡
+
+</section>
+
+<script>
+document.addEventListener('click', function(){
+    const audio = document.querySelector('audio');
+    audio.play().catch(()=>{});
+},{once:true});
+</script>
+
 </body>
 </html>
